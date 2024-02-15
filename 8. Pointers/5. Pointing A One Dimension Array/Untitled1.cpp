@@ -23,6 +23,23 @@ int main(){
     
     cout<<"The Value of the first element: "<<*A<<endl;
 
+    //you can get the values and the addresses of whole array by incriment them:
+
+    cout<<endl<<"The Values of the Arrays are: "<<endl;
+    for (int i = 0; i < 5; i++)
+    {
+        cout<<A[i];
+        cout<<endl;
+    }
+    cout<<endl<<"The Values of the Arrays are: "<<endl;
+    for (int i = 0; i < 5; i++)
+    {
+        cout<<&A[i];
+        cout<<endl;
+    }
+
+    
+
 
     
 }
