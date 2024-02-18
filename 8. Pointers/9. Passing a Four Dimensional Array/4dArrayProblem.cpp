@@ -5,7 +5,7 @@ using namespace std;
 
 
 
-int functionone(int places,int size_Array,int size_Array1,int size_Array2,int size_Array3){
+int functionone(int size_Array,int size_Array1,int size_Array2,int size_Array3,int places[size_Array][size_Array1][size_Array2][size_Array3]){
 
     for (int i = 0; i <= size_Array; i++){
             for (int j = 0; j <= size_Array1; j++){
@@ -17,12 +17,8 @@ int functionone(int places,int size_Array,int size_Array1,int size_Array2,int si
     }
     }
     }
+    }
 
-    
-    
-    
-
-}
 
 int main(){
 
@@ -35,8 +31,12 @@ int main(){
     int size_Array1 = sizeof(places)[0]/sizeof(places[0][0]);
     int size_Array2 = sizeof(places)[0][0]/sizeof(places[0][0][0]);
     int size_Array3 = sizeof(places)[0][0][0]/sizeof(places[0][0][0][0]);
-
-functionone(places,size_Array,size_Array1,size_Array2,size_Array3);
+    
+    cout<<size_Array<<endl;
+    cout<<size_Array1<<endl;
+    cout<<size_Array2<<endl;
+    cout<<size_Array3<<endl;
+    functionone(size_Array,size_Array1,size_Array2,size_Array3,places[size_Array][size_Array1][size_Array2][size_Array3]);
 
 
 
