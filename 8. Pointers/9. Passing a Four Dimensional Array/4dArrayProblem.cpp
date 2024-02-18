@@ -5,14 +5,18 @@ using namespace std;
 
 
 
-void functionone(int* places,size_Array){
+int functionone(int places,int size_Array,int size_Array1,int size_Array2,int size_Array3){
 
-for (int i = 0; i <= size_Array; i++)
-{
+    for (int i = 0; i <= size_Array; i++){
+            for (int j = 0; j <= size_Array1; j++){
+                    for (int k = 0; k <= size_Array2; k++){
+                            for (int l = 0; l <= size_Array3; l++){
+                                cout<<places[i][j][k][l]<<endl;
     
-    cout<<places[i]<<endl;
-    
-}
+    }
+    }
+    }
+    }
 
     
     
@@ -27,9 +31,12 @@ int main(){
  {40,41,42},{43,44,45}},{{46,47,48},{49,50,51},{52,53,54}}},{{{55,56,57},{58,59,60},{61,62,63}},
  {{64,65,66},{67,68,69},{70,71,72}},{{73,74,75},{76,77,78},{79,80,81}}}};
 
-    int size_Array = sizeof(places)/sizeof(places[0][0][0][0]);
+    int size_Array = sizeof(places)/sizeof(places[0]);
+    int size_Array1 = sizeof(places)[0]/sizeof(places[0][0]);
+    int size_Array2 = sizeof(places)[0][0]/sizeof(places[0][0][0]);
+    int size_Array3 = sizeof(places)[0][0][0]/sizeof(places[0][0][0][0]);
 
-functionone(places,size_Array);
+functionone(places,size_Array,size_Array1,size_Array2,size_Array3);
 
 
 
