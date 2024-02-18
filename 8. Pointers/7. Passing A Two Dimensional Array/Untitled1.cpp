@@ -22,7 +22,10 @@ int main() {
 	//instead of integar now the 2 in places represents 2 array.
 	//so when we use (&B+1) Instead of going to next integar we are going towards 
 	//the next array which also have three integers
+
+    //to get the number of Arrays  in this two d arrays 
     int rows = sizeof(arr) / sizeof(arr[0]);
+    //to get the number to elements in that each array of an two d array.
     int cols = sizeof(arr[0]) / sizeof(arr[0][0]);
 
     int sum = sum_2d_array(arr, rows, cols);
