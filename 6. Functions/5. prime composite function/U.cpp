@@ -10,7 +10,7 @@ void isprime(int num){
 		cout<<num<<" is prime";
 	}
     }
-    
+	
 	}
 
 
