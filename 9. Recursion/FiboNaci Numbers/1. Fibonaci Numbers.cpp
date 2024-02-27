@@ -19,7 +19,7 @@ int main() {
     }
 
     int fib_num = fibonacci(num);
-    cout<< "The " << num << "th Fibonacci number is: " << fib_num << std::endl;
+    std::cout<< "The " << num << "th Fibonacci number is: " << fib_num << std::endl;
 
     return 0;
 }
