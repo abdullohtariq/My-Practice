@@ -8,7 +8,7 @@ void doubleArray(int arrayOne[],int sizearrayOne){
         cout<<i<<". "<<arrayOne[i]*2<<endl;
     }
 }
-
+//like a int funtion void function doesn't return anything
 int main(){
     cout<<"Enter Your Numbers: "<<endl; 
     int arrayOne[5];
