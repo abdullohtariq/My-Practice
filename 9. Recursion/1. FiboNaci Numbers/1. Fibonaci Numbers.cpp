@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 int fibonacci(int n) {
     if (n <= 1) {
@@ -10,16 +11,16 @@ int fibonacci(int n) {
 
 int main() {
     int num;
-    std::cout << "Enter a non-negative integer: ";
-    std::cin >> num;
+    cout << "Enter a non-negative integer: ";
+    cin >> num;
 
     if (num < 0) {
-        std::cout << "Invalid input: Fibonacci sequence starts from 0." << std::endl;
+        cout << "Invalid input: Fibonacci sequence starts from 0." <<endl;
         return 1;  // Indicate error
     }
 
     int fib_num = fibonacci(num);
-    std::cout<< "The " << num << "th Fibonacci number is: " << fib_num << std::endl;
+    cout<< "The " << num << "th Fibonacci number is: " << fib_num <<endl;
 
     return 0;
 }
