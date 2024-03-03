@@ -12,5 +12,4 @@ int main(){
 		first=second;
 		second=next;
 	}
-	
-}
+	}
