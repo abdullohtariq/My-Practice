@@ -7,6 +7,10 @@ void squarePointer1(int *p){
 void unsquarePointer2(int **q){
 	**q=*(*q) * *(*q);
 }
+// Void Functions Don't give return Values.
+//dereferencing it one time gives the address of q
+//dereferencing it two times gives the adress of p
+//dereferencing it three times give us the value on kali variable
 void squarePointer3(int ***r){
 	***r=***r * ***r;
 }
