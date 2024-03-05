@@ -6,9 +6,11 @@ using namespace std;
 int factorial(int n) {
   // Base case: factorial of 0 and 1 is 1
   if (n == 0 || n == 1) {
+    //cause the fictorial of 0 and 1 is always 1
     return 1;
   } else {
     // Recursive case: factorial of n is n * (n-1)!
+    //everytime n is decereasing one time so it is going from n to 0
     return n * factorial(n - 1);
   }
 }
