@@ -1,0 +1,2 @@
+C:\Users\B.s\Documents\Simple GUI\ConsoleApplication1\x64\Debug\raylib.dll
+C:\Users\B.s\Documents\Simple GUI\ConsoleApplication1\ConsoleA.adbefb92\x64\Debug\ConsoleA.6FF751E1.Up2Date
