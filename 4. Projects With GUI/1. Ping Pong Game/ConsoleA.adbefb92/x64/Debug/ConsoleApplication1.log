@@ -1,8 +1,0 @@
-﻿  ConsoleApplication1.cpp
-C:\Users\B.s\Documents\Simple GUI\ConsoleApplication1\ConsoleApplication1.cpp(43,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\B.s\Documents\Simple GUI\ConsoleApplication1\ConsoleApplication1.cpp(49,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\B.s\Documents\Simple GUI\ConsoleApplication1\ConsoleApplication1.cpp(50,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\B.s\Documents\Simple GUI\ConsoleApplication1\ConsoleApplication1.cpp(68,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  ConsoleApplication1.vcxproj -> C:\Users\B.s\Documents\Simple GUI\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
-  'pwsh.exe' is not recognized as an internal or external command,
-  operable program or batch file.

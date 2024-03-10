@@ -1,0 +1,8 @@
+﻿  1. Ping Pong Game.cpp
+C:\Users\B.s\Documents\GitHub\My-Cpp-Practice\4. Projects With GUI\1. Ping Pong Game\1. Ping Pong Game.cpp(43,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\B.s\Documents\GitHub\My-Cpp-Practice\4. Projects With GUI\1. Ping Pong Game\1. Ping Pong Game.cpp(49,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\B.s\Documents\GitHub\My-Cpp-Practice\4. Projects With GUI\1. Ping Pong Game\1. Ping Pong Game.cpp(50,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\B.s\Documents\GitHub\My-Cpp-Practice\4. Projects With GUI\1. Ping Pong Game\1. Ping Pong Game.cpp(68,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  1. Ping Pong Game.vcxproj -> C:\Users\B.s\Documents\GitHub\My-Cpp-Practice\4. Projects With GUI\1. Ping Pong Game\x64\Debug\1. Ping Pong Game.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
