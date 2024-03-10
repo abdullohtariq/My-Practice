@@ -52,13 +52,12 @@ int main()
     rightPaddle.width = 10;
     rightPaddle.height = 100;
 
-
+    const char* winnertext =nullptr ;
 
     while (!WindowShouldClose())
     {
-        ball.x += ball.speedX * GetFrameTime();
-        ball.y += ball.speedY * GetFrameTime();
-
+        
+        
         if (ball.y < 0) {
             ball.y = 0; //Because the Get Frame Time is not constant,game can stuck
             ball.speedY *= -1;
@@ -68,6 +67,7 @@ int main()
             ball.y = GetScreenHeight();
             ball.speedY *= -1;
         }
+        
         //moving the paddles:
         if (IsKeyDown(KEY_W))
         {
@@ -90,16 +90,40 @@ int main()
 
         }
 
+        Rectangle leftPaddleRect = leftPaddle.GetRect();
+        Rectangle rightPaddleRect = rightPaddle.GetRect();
         if (CheckCollisionCircleRec(Vector2{ ball.x,ball.y }, ball.radius, rightPaddle.GetRect()))
         {
-            if (ball.speedY < 0)
+            if (ball.speedY < 0) {
                 ball.speedX *= -1;
+            }
         }
         if (CheckCollisionCircleRec(Vector2{ ball.x,ball.y }, ball.radius, leftPaddle.GetRect()))
         {
-            if (ball.speedY > 0)
+            if (ball.speedY > 0) {
                 ball.speedX *= -1;
+            }
         }
+        ball.x += ball.speedX * GetFrameTime();
+        ball.y += ball.speedY * GetFrameTime();
+
+        if (ball.x < 0) {
+            winnertext = "Right Player Won!!";
+
+        }
+        if (ball.x > GetScreenWidth()) {
+            winnertext = "Left Player Won!!";
+        }
+        if (winnertext && IsKeyPressed(KEY_SPACE)) {
+            ball.x = GetScreenWidth() / 2.0f;
+            ball.y = GetScreenHeight() / 2.0f;
+            ball.radius = 5;
+            ball.speedX = 300;
+            ball.speedY = 300;
+            winnertext = nullptr;
+        }
+
+
 
 
         BeginDrawing();
@@ -108,9 +132,14 @@ int main()
         ball.Draw();
         leftPaddle.Draw();
         rightPaddle.Draw();
+        if (winnertext) {
+            int textwidth = MeasureText(winnertext, 60);
+            DrawText(winnertext, GetScreenWidth()/2 - textwidth/2, GetScreenHeight() / 2 - 30, 60, RED);
+        }
         DrawFPS(10, 10);
         EndDrawing();
     }
+    
 
     CloseWindow();
 
