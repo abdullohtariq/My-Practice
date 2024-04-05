@@ -1,2 +1,0 @@
-C:\Users\B.s\Documents\GitHub\My-Cpp-Practice\4. Projects With GUI\1. Ping Pong Game\x64\Debug\raylib.dll
-C:\Users\B.s\Documents\GitHub\My-Cpp-Practice\4. Projects With GUI\1. Ping Pong Game\1. Ping .9b1d60b5\x64\Debug\1. Ping .9451F81E.Up2Date
