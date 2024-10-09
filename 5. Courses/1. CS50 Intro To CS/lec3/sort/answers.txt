@@ -1,0 +1,30 @@
+sort1 uses: Bubble Sort
+
+How do you know?:
+reversed5000  = 5 sec
+Sorted50000   = 0.6sec
+random50000   = 5sec
+The Big O is Big But the smaller bound implies that it is
+bubble sort cause in case of lower bound the time dropped very much
+
+
+
+sort2 uses: Merge Sort
+
+How do you know?:
+Reversed50000 = 0.6sec
+Sorted50000   = 0.6sec
+random50000   = 0.6sec
+Which means that it is same in worst case and best case
+(We Know with this time Frame that it is faster than the both)
+Above Two Points Conclude That it is infact Merge Sort.
+
+sort3 uses: Selection Sort
+
+How do you know?:
+reversed5000  = 2 sec
+Sorted50000   = 2 sec
+random50000   = 2 sec
+The remaining one is ofc selection but we can aslo tell by:
+It is same in upperbound and lower bound
+

@@ -89,6 +89,23 @@ int main()
             rightPaddle.y += rightPaddle.speed * GetFrameTime();
 
         }
+         //To keep paddles in the screen:
+         if (rightPaddle.y > GetScreenHeight())
+         {
+              rightPaddle.y = GetScreenHeight() - 1;
+         }
+         if (rightPaddle.y < 0)
+         {
+              rightPaddle.y = 1;
+         }
+         if (leftPaddle.y > GetScreenHeight())
+         {
+             leftPaddle.y = GetScreenHeight() - 1;
+         }
+         if (leftPaddle.y < 0)
+         {
+         leftPaddle.y = 1;
+         }
 
         Rectangle leftPaddleRect = leftPaddle.GetRect();
         Rectangle rightPaddleRect = rightPaddle.GetRect();
