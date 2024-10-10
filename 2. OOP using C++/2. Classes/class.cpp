@@ -21,5 +21,10 @@ class Empolyee{
 int main(){
     //Now You can use the above class of Employee As Data Type.
     Empolyee employee1;
+    //We can use all variable:
+    employee1.Name = "Abdullah";
+    employee1.Age = 10;
+    employee1.Company = "Meta";
+
 
 }
