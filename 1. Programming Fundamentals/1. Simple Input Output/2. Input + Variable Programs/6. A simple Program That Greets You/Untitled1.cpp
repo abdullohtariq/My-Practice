@@ -9,7 +9,7 @@ int main(){
 	cout<<"Hello, "<<a<<". How Are You??"<<endl<<"Note: Use all Lowercase"<<endl;
 	string b;
 	getline(cin,b);
-
+	//If/else statement will use them in later class:
 	if(b=="fine"  || "good" || "very good" || "very fine"|| "well"|| "very well"|| "i am good"|| "i am very good"|| "i am well")
 	cout<<"Good To Hear u are doing okay, "<<a<<endl;
 	else if(b=="Not Fine")
