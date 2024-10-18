@@ -2,7 +2,6 @@
 using namespace std;
 
 //OOP is programing Paradigm
-
 /* 
 Which Means, it is set of rules, concept and ideas or a standard that we follow
 in programming to slove a specific problem 
