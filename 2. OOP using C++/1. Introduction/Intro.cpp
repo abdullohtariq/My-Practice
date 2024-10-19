@@ -6,7 +6,6 @@ using namespace std;
 Which Means, it is set of rules, concept and ideas or a standard that we follow
 in programming to slove a specific problem 
 */
-
 //There are more than one programming paradigm. (OOP is just one of em.)
 
 
