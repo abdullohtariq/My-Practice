@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+}
+
+button {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    font-size: 24px; /* Adjust as needed */
+}
+#red{
+    background-color: white;
+}
+#blue{
+    background-color: white;
+}
+#green
+{
+    background-color: white;
+}

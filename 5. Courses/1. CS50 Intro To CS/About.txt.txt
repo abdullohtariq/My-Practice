@@ -1,2 +1,0 @@
-This is all the code that i have wrote while doing my CS-50 Course.
-

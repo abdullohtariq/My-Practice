@@ -1,0 +1,15 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+If songs.db contains the top 100 songs of one listener from 2018, we could characterize their "audio aura" by calculating the average values of energy, valence, and danceability across their top songs. If the average energy is high, it indicates the listener enjoys energetic music. A high valence suggests they prefer happy or positive songs, and a high danceability shows they enjoy music that's easy to dance to.
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener.
+
+This approach might not be very representative of the listener because it only considers their top 100 songs, which may not reflect their overall listening habits. Their top songs could be heavily influenced by specific times of the year (e.g., seasonal music or trending hits), and some songs may have been listened to repeatedly for external reasons, like parties or social trends, rather than personal preference. Moreover, simply averaging energy, danceability, and valence overlooks the emotional complexity of songs — for instance, a high-energy song could still have sad lyrics.
+
+What better ways of calculating this aura would you propose?
+
+Genre and Mood Categorization: Incorporate genre and analyze lyrical content for a more nuanced understanding of mood.
+Wider Dataset: Use a larger sample of songs beyond just the top 100 to better capture the listener’s preferences.
+Temporal Listening Patterns: Consider when certain types of music are listened to (e.g., energetic songs in the morning, calming music at night).
+Sentiment Analysis: Include sentiment analysis of lyrics to capture emotional tone more accurately.
+User Engagement: Factor in how frequently songs are replayed or skipped to understand which songs the listener truly enjoys.
