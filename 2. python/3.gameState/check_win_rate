@@ -1,0 +1,18 @@
+def main():
+    wins = 0
+    losses = 0
+    with open("game.txt", "r") as file:
+        for line in file:
+            line = line.strip()
+            if line == "won":
+                wins += 1
+            elif line == "lose":
+                losses += 1
+    print("Total games played:", wins + losses)
+    print(f"You have won {wins} times.")
+    print(f"You have lost {losses} times.")
+    print(f"Your win percentage is {wins / (wins + losses) * 100:.2f}%.")
+
+
+if __name__ == "__main__":
+    main()
