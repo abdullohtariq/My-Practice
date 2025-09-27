@@ -23,7 +23,7 @@ def main():
         else:
             print(f"Sorry, you've used all your attempts. The number was {number}.")
             with open("game.txt", "a") as file:
-                file.write("won\n")
+                file.write("lose\n")
             break
 
 def get_int():
