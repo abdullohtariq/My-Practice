@@ -4,8 +4,8 @@ def main():
     age = input("Enter your age: ")
     home = input("Enter your home: ")
     with open("data.csv", "a") as file:
-        writer = csv.writer(file)
-        writer.writerow([name, age, home])
+        writer = csv.DictWriterwriter(file, fieldnames=["name", "age", "address"])
+        writer.writerow({"name": name, "age": age, "address": home})
         
 if __name__ == "__main__":
     main()
