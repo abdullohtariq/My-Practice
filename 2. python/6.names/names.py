@@ -2,7 +2,7 @@ import re
 import sys
 def main():
     name = input("Enter your name: ")
-    matches = re.search(r"^([\w .'-]+), ?([\w .'-]+)$", name)
+    matches = re.search(r"^([\w .'-]+), *([\w .'-]+)$", name)
     if matches:
         last = matches.group(1)
         first = matches.group(2)
