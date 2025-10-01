@@ -1,87 +1,62 @@
 ## My Practice
 
-A personal collection of programming exercises and small projects. Most code is in C and C++, covering fundamentals (I/O, conditionals, loops), arrays, pointers, functions, recursion, basic data structures, and OOP. There are also a few GUI experiments and some Python/course materials.
+This repository is a single place to collect code written while learning languages, paradigms, and small-project experiments. The goal is to keep practice code and small projects together instead of creating a separate repository for every tiny experiment.
 
-### Repository Structure
+Contents at a glance
+- `1. C and Cpp/` — C and C++ exercises, grouped by topic (fundamentals, loops, functions, arrays, pointers, recursion), small console projects, and a few GUI/Visual Studio projects.
+- `2. python/` — Python practice scripts and small utilities. Subfolders include:
+  - `File_input_output/` — basic file-reading/writing examples.
+  - `csv/` — CSV examples and small scripts.
+  - `3.gameState/` — a simple number-guessing game (`gamestate.py`), a stats reader (`check_win_rate`), and a GUI frontend (`gui_frontend.py`). Game runs append results to `game.txt`.
+  - `write/`, `regular expressions/`, `names/` — short exercises and small utilities.
+- `5. Courses/` — course materials and exercises (CS50, CS50P). Useful reference and solved exercises from courses.
 
-- `1. C and Cpp/`
-  - `1. Programming Fundamentals/` – Intro C++ programs by topic:
-    - `1. Simple Input Output/`, `2. Input + Variable Programs/`, `2. If Else Statements/`,
-      `3. Loops And For Loops/`, `4. Nested Loops/`, `5. Switches/`, `6. Functions/`,
-      `7. Arrays/`, `8. Pointers/`, `9. Recursion/`, `91. Sturctures/`
-  - `2. OOP using C++/` – Basics of classes and OOP concepts
-  - `3. Small Projects/` – Console projects like `Game Of Life`, `Tic Tac Toe`,
-    plus demos like `LinkList.cpp`, `stack.cpp`
-  - `4. Projects With GUI/` – Visual Studio C++ project files (e.g., `Ping Pong Game`)
-- `2. python/`
-  - Space for Python practice (scripts, exercises)
-- `5. Courses/`
-  - Course-related code and notes (e.g., `CS50 Intro To CS`, `CS50p Intro to Python`)
+Repository purpose
+- Keep learning experiments in one place so you can browse how a concept was implemented in different languages.
+- Store small projects (games, utilities, demos) without creating a separate GitHub repo for each.
 
-Most folders contain `.cpp`/`.c` sources and sometimes compiled `.exe` files for Windows.
+Quick examples
 
-### Prerequisites
-
-- Windows (PowerShell) or any OS with a C/C++ toolchain
-- C++ compiler (choose one):
-  - MSVC (Visual Studio or Build Tools)
-  - MinGW-w64 (GCC/G++)
-  - Clang
-- Optional: Visual Studio for opening `.sln`/`.vcxproj` GUI projects
-
-### Build (Windows)
-
-You can compile any program from its folder. Paths have spaces; wrap them in quotes.
-
-- MSVC (Developer Command Prompt):
+Run a Python script (from repo root):
 ```powershell
-# Open "x64 Native Tools Command Prompt for VS"
-cd "1. C and Cpp/1. Programming Fundamentals/2. If Else Statements/1. Maximum Number From 3 Values"
-cl /EHsc "1. Maximum Number From 3 Values.cpp"
+python "2. python\3.gameState\gamestate.py"
 ```
 
-- MinGW-w64 (g++):
+Open the GUI frontend (it will launch the interactive game in a new terminal and show stats after each round):
 ```powershell
-cd "1. C and Cpp/1. Programming Fundamentals/3. Loops And For Loops/1. For Loops"
+python "2. python\3.gameState\gui_frontend.py"
+```
+
+Count wins and losses (the `check_win_rate` script reads `game.txt`):
+```powershell
+python "2. python\3.gameState\check_win_rate"
+```
+
+Compile/Run C/C++ (Windows PowerShell examples)
+```powershell
+# Using MinGW GCC/g++
+cd "1. C and Cpp\1. Programming Fundamentals\3. Loops And For Loops\1. For Loops"
 g++ -std=c++17 "1. For Loops.cpp" -o ForLoops.exe
-./ForLoops.exe
+.\ForLoops.exe
+
+# Using MSVC from Developer Command Prompt
+cl /EHsc "YourProgram.cpp"
 ```
 
-- Clang++:
-```powershell
-cd "1. C and Cpp/3. Small Projects/1. Game Of Life"
-clang++ -std=c++17 game.cpp -o game.exe
-./game.exe
-```
+Notes and conventions
+- Many folder names are numbered to help keep exercises ordered; filenames mirror the exercise's topic.
+- Scripts that produce or append to `game.txt` (for example `gamestate.py`) will change that file. The GUI frontend and `check_win_rate` read this file to show stats.
+- Use quotes when changing into directories with spaces (PowerShell/Command Prompt).
 
-Notes:
-- Some folders already include `.exe` files you can run directly.
-- Use quotes around paths and filenames that contain spaces or punctuation.
+Suggestions / next steps
+- If you want, I can:
+  - Add a small CONTRIBUTING.md with repo conventions.
+  - Standardize Python scripts to use `.py` extension consistently and add a tiny CLI (argparse) to `check_win_rate`.
+  - Add a simple index (top-level markdown) listing runnable examples and where to find them.
 
-### Run
+License
+- This is a personal practice repository
 
-- File Explorer: double-click the `.exe` (Windows)
-- Terminal:
-```powershell
-./program.exe
-```
-Follow on-screen prompts for input-based programs.
-
-### GUI Projects (Visual Studio)
-
-- Open `1. C and Cpp/4. Projects With GUI/1. Ping Pong Game/1. Ping Pong Game.sln` in Visual Studio
-- Build and run (Debug/Release as desired)
-
-### Python
-
-If present, run Python scripts from `2. python/` like this:
-```powershell
-python script.py
-```
-
-### Contributing / Notes
-
-- Personal learning repository; folder names mirror exercise titles.
-- Suggestions are welcome—open an issue or a pull request with a short description.
+---
 
 
