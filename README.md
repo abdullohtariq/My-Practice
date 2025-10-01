@@ -48,11 +48,6 @@ Notes and conventions
 - Scripts that produce or append to `game.txt` (for example `gamestate.py`) will change that file. The GUI frontend and `check_win_rate` read this file to show stats.
 - Use quotes when changing into directories with spaces (PowerShell/Command Prompt).
 
-Suggestions / next steps
-- If you want, I can:
-  - Add a small CONTRIBUTING.md with repo conventions.
-  - Standardize Python scripts to use `.py` extension consistently and add a tiny CLI (argparse) to `check_win_rate`.
-  - Add a simple index (top-level markdown) listing runnable examples and where to find them.
 
 License
 - This is a personal practice repository
